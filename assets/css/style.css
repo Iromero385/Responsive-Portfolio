@@ -188,6 +188,9 @@ input{
    
 }
 @media only screen and (max-width: 640px) {
+   body{
+       width: 640px;
+   }
     nav{
         margin: 0;
         width: 100%;
@@ -209,7 +212,7 @@ input{
         margin: 180px;
         margin-left: auto;
         margin-right: auto;
-        width: 640px; 
+        width: 90%; 
 
     }
     .profile{
@@ -224,7 +227,14 @@ input{
     }
     #messageBox{
         width: 100%;
-    
+    }
+    .leftCorner{
+        float: right;
+        margin-right: 0%;
+        padding-top: 25;
+        padding-right: 0;
+        
+    }
    
 }
 
