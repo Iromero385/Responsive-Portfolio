@@ -1,5 +1,8 @@
+*{
+    box-sizing: border-box;
+}
 html{
-    /* background-color: aliceblue; */
+    
     background:url('https://c1.staticflickr.com/1/695/33397623376_7d88a81969_b.jpg') no-repeat center fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -10,41 +13,49 @@ html{
 body{
     
     margin: 0 auto;
-    width: 960px;
+    width: 980px;
     height: 450px;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
    
-   /* background-color: rgb(196, 255, 251); */
+  
 }
 header{
+    box-sizing: border-box;
     background-color: aliceblue;
     margin-bottom: 10px;
     position: fixed;
     top: 0;
+    left: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 960PX;
+    width: 100%;
     height:75px;
 
 }
 main{
+    width: 980px;
+    box-sizing: border-box;
     padding-right:15px;
     padding-left: 15px;
+    padding-bottom: 15px;
     margin-top: 95px;
     background-color: whitesmoke;
 }
 nav{
+    margin-left:95px;
     position: relative;
     background-color: teal;
-    padding: 25px; 
+    padding: 25px;
+    padding-bottom: 50px; 
     float: left;
-    height: 25px;
+    height: 50px;
     font-size: 18px;
     color: aliceblue;
 
 }
 .leftCorner{
-    margin-left: 666px;
+    float: right;
+    margin-right: 0%;
     padding-top: 25;
     padding-right: 0;
     
@@ -60,15 +71,6 @@ nav{
 }
 .links:hover{
     color: brown;
-}
-img{
-    width: 200px;
-    float: left;
-    margin-right: 10px;
-}
-p{
-    display: inline;
-    line-height: 1.6;
 }
 h2{
     padding-top: 30px;
@@ -93,6 +95,137 @@ footer{
     border-color: teal;
     border-width: 10px;
 
+}
+p{
+    display: inline;
+    line-height: 1.6;
+}
+input{
+    width: 910px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#messageBox{
+    height: 160px;
+    box-sizing: border-box;
+    width: 910px;
+    text-align: start;
+}
+.SubmiBnt{
+    padding: 10px;
+    width: auto;
+    background-color: teal;
+    color: white;
+    font-size: 16px;
+
+}
+.setPics:hover{
+    background-color:rebeccapurple;
+    width: 40%;
+
+}
+.profile{
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+.allPics{
+    width: 30%;
+    padding:30px 20px;
+   
+}
+
+@media only screen and (max-width: 980px) {
+    
+    main {
+        margin-left: 0;
+        width: 768px;
+
+    }
+    .allPics{
+        width: 40%;
+    }
+    input{
+        width: 100%;
+    }
+    #messageBox{
+        width: 100%;
+    }
+    .leftCorner{
+        float: right;
+        margin-right: 15%;
+        padding-top: 25;
+        padding-right: 0;
+        
+    }
+   
+}
+@media only screen and (max-width: 768px) {
+    
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        
+
+    }
+    .allPics{
+        width: 45%;
+    }
+    input{
+        width: 100%;
+    }
+    #messageBox{
+        width: 100%;
+    }
+    .leftCorner{
+        float: right;
+        margin-right: 0%;
+        padding-top: 25;
+        padding-right: 0;
+        
+    }
+   
+}
+@media only screen and (max-width: 640px) {
+    nav{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        
+    }
+    .leftCorner{
+        clear: both;
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .links{
+        font-size: 36px;
+    }
+    main {
+        margin: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 640px; 
+
+    }
+    .profile{
+        width: 100%
+    }
+    
+    .allPics{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    #messageBox{
+        width: 100%;
+    
+   
 }
 
 
